@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+     <head>
+          <title>
+               ChatBots
+          </title>
+          <!-- favicon  -->
+          <link rel="icon" href="img/logos/checkbot.gif">
+          <meta charset="UTF-8">
+          <!-- some fonts  -->
+         <!-- <link href="css/libs/google_fonts.css" rel="stylesheet" type="text/css"> -->
+
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='google_fonts.css') }}" />
+
+          <!-- Using panels in order to make a single page application -->
+          <!-- Animations and stuff is made in panels.css -->
+          
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='panels.css') }}" />
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home_hover.css') }}" />
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header_hover.css') }}" />
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='word_chat_frame.css') }}" />
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='weather_chat_frame.css') }}" />
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts_styles.css') }}" />
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='d3tree.css') }}" />
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='tables.css') }}" />
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='curr_chat_frame.css') }}" />
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='curr_choice.css') }}" />
+
+     </head>
+<body>
+
+     <!-- Navigation -->
+     <div class="menu">
+
+        <div class="one-third">
+             <a class="btn-draw" href="chatbot" data-hover="WeatherBot">
+                  <span>
+                       CovidBot
+                  </span>
+             </a>
+             <p class="bot-description">
+               vous pouvez me demander tout ce qui concerne les vaccins anti-COVID-19 et encore plus
+             </p>
+        </div>
+
+        <div class="menu-footer">
+             <p>
+                  <a class="header-button" href ="http://dorian-naaji.fr">
+                       © Rahma Dia ⋅ 2021
+                  </a>
+             </p>
+        </div>
+   </div>
+   <!-- Home Panel  -->
+
+   <div class="panel" id="home">
+   </div>
+
+</body>
+</html>

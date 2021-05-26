@@ -1,0 +1,252 @@
+/*
+ Gestion chat
+*/
+
+#curr-bot-frame
+{
+    min-width: 360px;
+    max-width: 1000px;
+    height: 80vh;
+    min-height: 300px;
+    max-height: 720px;
+
+    margin: auto;
+    width: 50%;
+
+    background:rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 360px)
+{
+    #curr-bot-frame
+    {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+#curr-bot-frame .content
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (max-width: 735px)
+{
+    #curr-bot-frame .content
+    {
+        min-width: 300px !important;
+    }
+}
+
+@media screen and (min-width: 900px)
+{
+
+}
+
+#curr-bot-frame .content .contact-profile
+{
+    width: 100%;
+    height: 60px;
+    background: #2c3e50;
+}
+
+#curr-bot-frame .content .contact-profile img
+{
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    margin: 9px 12px 0 9px;
+}
+
+#curr-bot-frame .content .contact-profile p
+{
+    float: left;
+    color: white;
+}
+
+#curr-bot-frame .content .curr-bot-messages
+{
+    width: 100%;
+    left: -5%;
+    position: absolute;
+    min-height: calc(100% - 93px);
+    max-height: calc(100% - 93px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom:15px;
+}
+
+@media screen and (max-width: 735px)
+{
+    #curr-bot-frame .content .curr-bot-messages
+    {
+        max-height: calc(100% - 105px);
+    }
+}
+
+#curr-bot-frame .content .curr-bot-messages::-webkit-scrollbar
+{
+    width: 8px;
+    background: transparent;
+}
+
+#curr-bot-frame .content .curr-bot-messages::-webkit-scrollbar-thumb
+{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#curr-bot-frame .content .curr-bot-messages ul li
+{
+    display: inline-block;
+    clear: both;
+    float: left;
+    margin: 15px 15px 5px 15px;
+    width: calc(100% - 25px);
+    font-size: 0.9em;
+}
+
+#curr-bot-frame .content .curr-bot-messages ul li:nth-last-child(1)
+{
+    margin-bottom: 20px;
+}
+
+#curr-bot-frame .content .curr-bot-messages ul li.curr-bot-sent img
+{
+    margin: 6px 8px 0 0;
+}
+
+#curr-bot-frame .content .curr-bot-messages ul li.curr-bot-sent p
+{
+    background: #435f7a;
+    color: #f5f5f5;
+}
+
+#curr-bot-frame .content .curr-bot-messages ul li.curr-bot-replies img
+{
+    float: left;
+    margin: 6px 0 0 8px;
+}
+
+#curr-bot-frame .content .curr-bot-messages ul li.curr-bot-replies p
+{
+    background: #2b2b2b;
+    color:#ffffff;
+    float: right;
+}
+
+#curr-bot-frame .content .curr-bot-messages ul li img
+{
+    width: 22px;
+    border-radius: 50%;
+    float: left;
+}
+
+#curr-bot-frame .content .curr-bot-messages ul li p
+{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 205px;
+    line-height: 130%;
+}
+
+@media screen and (min-width: 735px)
+{
+    #curr-bot-frame .content .curr-bot-messages ul li p
+    {
+        max-width: 600px;
+    }
+}
+
+#curr-bot-frame .content .curr-bot-messages-input
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+#curr-bot-frame .content .curr-bot-messages-input .wrap
+{
+    position: relative;
+}
+
+#curr-bot-frame .content .curr-bot-messages-input .wrap input
+{
+    font-family: "proxima-nova",  "Source Sans Pro", sans-serif;
+    border: none;
+    font-size: 0.8em;
+    color: #32465a;
+}
+
+@media screen and (max-width: 735px)
+{
+    #curr-bot-frame .content .curr-bot-messages-input .wrap input
+    {
+    }
+}
+
+#curr-bot-frame .content .curr-bot-messages-input .wrap input:focus
+{
+    outline: none;
+}
+
+#curr-bot-frame .content .curr-bot-messages-input .wrap .attachment
+{
+    position: absolute;
+    right: 60px;
+    z-index: 4;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #435f7a;
+    opacity: .5;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 735px)
+{
+    #curr-bot-frame .content .curr-bot-messages-input .wrap .attachment
+    {
+        margin-top: 17px;
+        right: 65px;
+    }
+}
+
+#curr-bot-frame .content .curr-bot-messages-input .wrap .attachment:hover
+{
+    opacity: 1;
+}
+
+#curr-bot-frame .content .curr-bot-messages-input .wrap button
+{
+    float: right;
+    border: none;
+    width: 50px;
+    padding: 12px 0;
+    cursor: pointer;
+    background: #32465a;
+    color: #f5f5f5;
+}
+
+@media screen and (max-width: 735px)
+{
+    #curr-bot-frame .content .curr-bot-messages-input .wrap button
+    {
+        padding: 16px 0;
+    }
+}
+
+#curr-bot-frame .content .curr-bot-messages-input .wrap button:hover
+{
+    background: #435f7a;
+}
+
+#curr-bot-frame .content .curr-bot-messages-input .wrap button:focus
+{
+    outline: none;
+}
+
+

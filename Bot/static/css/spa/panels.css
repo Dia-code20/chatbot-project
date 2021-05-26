@@ -1,0 +1,190 @@
+
+
+/* Navigation menu */
+
+/* •••••••••••••••••••••••••••••••• */
+.menu
+{
+    position: fixed;
+    width: 100%;
+    margin-top: 10vh;
+    text-align: center;
+    z-index: 2;
+    padding: 0;
+
+}
+
+.one-third
+{
+    width: 30%;
+    margin-right:3.33%;
+    float: left;
+    position:relative;
+}
+
+.bot-description
+{
+    text-align:center;
+    font-family: 'Nunito', sans-serif;
+    font-size:16px;
+    font-style: normal;
+    position:relative;
+}
+
+.menu-footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*  Specific "Home "panel */
+/* •••••••••••••••••••••••••••••••• */
+.panel#home
+{
+    z-index: 1;
+    background: linear-gradient(45deg, #8b668b, #bfe1d1);
+}
+
+.panel#home canvas
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+
+/* Panels Style*/
+/* •••••••••••••••••••••••••••••••• */
+/* Common panel style */
+.panel
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    z-index: 999;
+    color: #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #ECEFF1;
+}
+
+/* panel content (only for animation delay after open) */
+.panel-content
+{
+    opacity: 0;
+    will-change: margin-top;
+    -webkit-transition: all 700ms;
+    transition: all 700ms;
+    -webkit-transition-delay: 600ms;
+    transition-delay: 600ms;
+    width:100%;
+    height:100%;
+}
+
+.panel-header
+{
+    height: 72px;
+    padding: 0px;
+    background: rgba(50, 50, 50, 0.81);
+    margin: 0px;
+    margin-bottom: 2.5%;
+    vertical-align: middle;
+}
+
+.panel-header-content
+{
+    padding-top:10px;
+}
+
+
+
+
+/* Panel content animation after open */
+.panel:target .panel-content {
+
+    opacity: 1;
+    margin-top: 0;
+}
+
+
+
+
+
+/*  Specific panel "word_bot" */
+/* •••••••••••••••••••••••••••••••• */
+.panel#word-bot
+{
+    background:url(../../img/backgrounds/wordbot.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.56, 1);
+    transition: all 800ms cubic-bezier(0.19, 1, 0.56, 1);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.panel#word-bot:target
+{
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/*  Specific panel "weather_bot" */
+/* •••••••••••••••••••••••••••••••• */
+.panel#weather-bot
+{
+    background:url(../../img/backgrounds/weatherbot.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.56, 1);
+    transition: all 800ms cubic-bezier(0.19, 1, 0.56, 1);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.panel#weather-bot:target
+{
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/*  Specific panel "geo_bot" */
+/* •••••••••••••••••••••••••••••••• */
+.panel#curr-bot
+{
+    background:url(../../img/backgrounds/currbot.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.56, 1);
+    transition: all 800ms cubic-bezier(0.19, 1, 0.56, 1);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.panel#curr-bot:target
+{
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}

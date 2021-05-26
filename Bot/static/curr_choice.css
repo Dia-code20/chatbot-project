@@ -1,0 +1,21 @@
+.chosen-container .chosen-drop
+{
+    border-bottom: 0;
+
+    border-top: 1px solid #aaa;
+    top: auto;
+    display: inline-block;
+    height: 20vh;
+}
+
+.chosen-select
+{
+    margin-bottom:1px;
+}
+
+.spacer
+{
+    display: inline-block;
+    margin-right:15px;
+    margin-left:15px;
+}
